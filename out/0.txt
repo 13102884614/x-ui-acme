@@ -1,1 +1,5 @@
-0
+#注册邮箱
+docker-compose run acme.sh --register-account -m 1009371162@qq.com --debug
+#以下二选一
+#泛域名证书
+docker-compose run acme.sh --issue --dns dns_cf -d mytest.com -d *.mytest.com --debug
